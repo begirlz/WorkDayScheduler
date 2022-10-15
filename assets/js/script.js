@@ -2,13 +2,11 @@
 var todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").text(todayDate);
 
-// saveBtn click 
+// saveBtn click to save data
 $(".saveBtn").on("click", function () {
     //get values from the same row
     var text = $(this).siblings(".description").val();
     var id = $(this).parent().attr("id");
-
-    //save text in local storage
     localStorage.setItem(id, text);
 })
 
@@ -17,8 +15,8 @@ $('.description').each(function (i,p) {
     var id = $(this).parent().attr("id");
     $(this).val((localStorage.getItem(id)));
 })
-//$("#8 .description").val(localStorage.getItem("8"));
 
+//track time
 function timeTracker() {
 
     var timeNow = moment().hour();

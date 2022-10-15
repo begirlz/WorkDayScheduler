@@ -6,6 +6,7 @@ body {
   height: 100vh;
 }
 
+/* styling textearea */
 textarea {
   background: transparent;
   border: none;
@@ -26,7 +27,7 @@ textarea {
 .description {
   white-space: pre-wrap;
 }
-
+/* main schedluler */
 .time-block {
   text-align: center;
   border-radius: 15px;
@@ -44,6 +45,7 @@ textarea {
   border-top: 1px dashed #000000;
 }
 
+/* stlying time events */
 .past {
   background-color: #d3d3d3;
   color: white;
@@ -59,6 +61,7 @@ textarea {
   color: white;
 }
 
+/* styling save button */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
